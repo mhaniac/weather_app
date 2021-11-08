@@ -1,0 +1,56 @@
+.details {
+  max-height: 75vh;
+  height: 75vh;
+  margin-top: 15px;
+
+  &__card {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    // background: #7f7fd5;
+    // background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+    // background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+    border-radius: 25px;
+    height: 50%;
+    padding: 25px 0;
+  }
+
+  &__top {
+    background-color: var(--ion-color-light);
+    color: var(--ion-color-dark);
+    padding: 10px 25px;
+    position: absolute;
+    border-radius: 50vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__date {
+    margin: 0;
+  }
+
+  &__weather {
+    color: var(--ion-color-dark);
+    font-size: 28px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+
+  &__grades {
+    font-size: 180px;
+    margin: 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    &::after {
+      content: "º";
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 50vw;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+  }
+}
